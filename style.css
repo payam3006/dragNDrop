@@ -1,0 +1,51 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  font-size: larger;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(50, 130, 161);
+  color: white;
+}
+
+.box {
+  width: 70px;
+  height: 70px;
+  background-color: whitesmoke;
+  margin: 5px;
+  display: inline-block;
+  border: 2px solid black;
+}
+
+.img {
+  background-image: url("DSC00241.JPG");
+  background-size: cover;
+  cursor: pointer;
+}
+
+.onDrag {
+  width: 70px;
+  height: 70px;
+  background-image: url("DSC00241.JPG");
+  background-size: cover;
+  object-fit: cover;
+  border: 3px solid rgb(162, 162, 162);
+  box-shadow: 0 0 5px white;
+  position: absolute;
+  left: -100px;
+  top: -100px;
+}
+
+.dragOn {
+  background-color: darkgrey;
+  border: 2px dashed white;
+}
+
+@media only screen and (max-width: 600px) {
+  .box {
+    display: block;
+  }
+}
